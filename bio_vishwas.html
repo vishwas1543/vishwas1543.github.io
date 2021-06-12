@@ -1,0 +1,319 @@
+<html>
+<head>
+  <title>Hey I am Vishwas, this is my page</title>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+
+  .container {
+    position: relative;
+    color:white;
+  }
+
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    height:auto;
+    width:100%;
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev{
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 60px;
+  }
+
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+
+  }
+  .demo {
+    opacity: 0.6;
+  }
+
+  .active{
+    opacity: 1;
+  }
+  .demo:hover {
+    opacity: 1;
+  }
+  .img2{
+      height: 550px;
+      overflow: hidden;
+  }
+  ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  }
+
+  li {
+  float: left;
+  border-right:1px solid #000;
+  }
+
+  li:last-child {
+  border-right: none;
+  }
+  li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+  li a:hover:not(.active) {
+  background-color: #111;
+  }
+
+  .active {
+  background-color: #779933;
+  }
+  .dropbtn{
+    display: block;
+    background-color: #333;
+  color: white;
+  padding: 14px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  }
+  .dropdown:hover .dropdown-content {
+  display: block;
+}
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+body{
+  background-color: #222;
+
+}
+.About_me{
+  display: inline-block;
+  width: 100%;
+  height: 100%
+  margin:auto;
+  margin-left: 1%;
+  margin-top: 1%;
+  color: white;
+  font-size: 20px;
+}
+
+.image {
+  display:inline-block;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 5px solid #333;
+  float: right;
+}
+.contact{
+  display: block;
+  color: white;
+  background-color: #333;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+.btn2{
+background-color: white;
+color: #333;
+width: 5%;
+font: solid arial;
+}
+
+
+
+  </style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">Articles</a></li>
+  <div class="dropdown">
+  <li><button class="dropbtn">Contact me</button>
+    <div class="dropdown-content">
+    <a href="#">Email</a>
+    <a href="https://www.linkedin.com/in/vishwas-rajaram-99660319b/">Linkedin</a>
+    <a href="#">Link 3</a>
+    </div>
+   </li>
+ </div>
+  <li style="float:right"><a href="#about">About</a></li>
+</ul>
+<div class="Container">
+  <h1>Photos from my travel</h1>
+  <div class="mySlides">
+    <div class="numbertext">1 / 4</div>
+      <img src="CoonoorTeaGarden.jpeg" style="width:100%" class="img2">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 4</div>
+      <img src="OotyFlower.jpeg" style="width:100%" class="img2">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">3 / 4</div>
+      <img src="OotyLake.jpeg" style="width:100%" class="img2">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">4 / 4</div>
+      <img src="OotyLake2.jpeg" style="width:100%" class="img2">
+  </div>
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="CoonoorTeaGarden.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Coonoor Tea Gardens">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="OotyFlower.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Flower House in ooty">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="OotyLake.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Ooty Lake">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="OotyLake2.jpeg" style="width:100%" onclick="currentSlide(5)" alt="So many Lakes in ooty wow">
+    </div>
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+<div class="About_me">
+  <img src="vishu_profile.jpeg" alt="" class="image" align="right">
+  <h1>ABOUT ME</h1>
+  <p>Hey guys my name I am Vishwas, I am from Mumbai, but I am a tamilian. I am currently studying Mechanical in NIT Calicut, but my interests lie purely in the fields of data science and machine learning(God Bless the great minds who thought of it!). I started learning web dev for one and only one reason, most internships for ML demand atleast the basics of web development and I kinda wanted to work on it  </p>
+
+</div>
+
+<div class="Contact">
+  <h2>Send an email to me</h2>
+
+  <form action="mailto:vishurajaram8122@gmail.com" method="post" enctype="text/plain">
+  Name:<br>
+  <input type="text" name="name"><br>
+  E-mail:<br>
+  <input type="text" name="mail"><br>
+  Comment:<br>
+  <textarea name="comment" size="50"></textarea><br><br>
+  <input type="submit" value="Send" class="btn2">
+  <input type="reset" value="Reset" class="btn2">
+  </form>
+</div>
+
+</body>
+</html>
